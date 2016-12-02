@@ -43,8 +43,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loaders: ['babel?cacheDirectory'],
-        include: APP,
-        query: {compact: false}
+        include: APP
       },
       {
         test: /\.css$/,
