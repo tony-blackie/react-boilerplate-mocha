@@ -6,12 +6,11 @@ const PORT = 3000;
 const usersPath = path.join(__dirname + '/app/fixtures/data/users.json');
 const users = require(usersPath);
 
-app.use(express.static(__dirname + '/app/templates/index.html'));
+app.use(express.static(__dirname + '/app/public'));
 
 app.get('/users', (req, res) => {
-    console.log(`Serving json with ${users}`);
-    // res.send(users);
-    res.send('Hello World');
+    console.log(`Serving json with ${usersPath}`);
+    res.send(users);
 });
 
 console.log(`Server is listening on port ${PORT}`);
