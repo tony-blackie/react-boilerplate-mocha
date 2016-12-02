@@ -1,0 +1,15 @@
+/* Dark color palette */
+$default: slategray;
+$primary: steelblue;
+$secondary: teal;
+$danger: crimson;
+$warning: tomato;
+$success: mediumseagreen;
+
+/* Light color palette */
+$default-light: whitesmoke;
+$primary-light: aquamarine;
+$secondary-light: cyan;
+$danger-light: pink;
+$warning-light: moccasin;
+$success-light: honeydew;
