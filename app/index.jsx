@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Landing from './components/Landing';
+import Page from './components/Page';
+import MissingRoute from './components/MissingRoute';
 
 import {
     Router,
@@ -11,8 +13,7 @@ import {
 
 const routeConfig = (
     <Route path="/" component={Landing}>
-        <IndexRoute component={Landing} />
-        <Route path="/other" component={Other} />
+        <IndexRoute component={Page} />
         <Route path="*" component={MissingRoute} />
     </Route>
 );
